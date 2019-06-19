@@ -3,7 +3,9 @@ import requests
 def line_notify(request_message):
     '''
     引数で渡されたrequest_messageを送信するクラス
+    コメント追加
     '''
+    
 
     url = 'https://notify-api.line.me/api/notify'
     access_token = 'FuKzJ3QyUXpYC50rLvgVMRascjWSksFBlExeWOGEBW3'
