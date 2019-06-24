@@ -1,12 +1,13 @@
 import json
 import requests
+from system_constant import WEATHER_KEY
 
 
 def call_weather_api():
     '''
     APIで天気予報を取得するクラス
     '''
-    api_key = 'ff163525ff213274a114a7f4f3b6859c'
+    api_key = WEATHER_KEY
     api = 'http://api.openweathermap.org/data/2.5/forecast?units=metric&q={city}&APPID={key}&cnt={limit}'
 
     city_name = 'Tokyo,JP'
