@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import requests
 from system_constant import NOTIFY_TOKEN, NOTIFY_URL
 
