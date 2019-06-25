@@ -1,5 +1,5 @@
 import requests
-from system_constant import NOTIFY_TOKEN, NOTIFY_URL
+import os
 
 def line_notify(request_message):
     '''
@@ -7,8 +7,8 @@ def line_notify(request_message):
     コメント追加
     '''
     
-    url = NOTIFY_URL
-    access_token = NOTIFY_TOKEN
+    url = 'https://notify-api.line.me/api/notify'
+    access_token = os.environ['NOTIFY_TOKEN']
 
     payload = {'message' : request_message}
     headers = {'Authorization' : 'Bearer ' + access_token}

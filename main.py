@@ -13,9 +13,12 @@ if __name__=='__main__':
             rainy_flag = True
         
     if(rainy_flag):
-        request_message = '\n It\'s Rainy Today! \n Please go out with umbrella!'
-    else:
-        request_message = '\n It\'s Sunny Today!'
+        request_message = '\n I guess , it\'s Rainy Today! \n You should go out with umbrella!'
+        # TODO 雨の度合によってメッセージを変更したい
+        # TODO 休日はメッセージを送らない設定にしたい
+    # else:
+        # 晴れの日は何もしない
+        # request_message = '\n It\'s Sunny Today!'
 
     if request_message:
         print(request_message)
